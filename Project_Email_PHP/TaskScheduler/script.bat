@@ -1,0 +1,1 @@
+"D:\xampp\php\php.exe" -f "D:\xampp\htdocs\New folder\Project_Email_PHP\Mail.php"
