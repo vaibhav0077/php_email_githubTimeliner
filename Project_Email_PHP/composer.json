@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpMailer/PHPMailerAutoload.php" : "5",
+        "simple_html_dom.php" : "1.9.1"
+    }
+  }
