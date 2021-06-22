@@ -2,7 +2,8 @@
 require 'phpMailer/PHPMailerAutoload.php';
 require 'simple_html_dom.php';
 
-$conn = new mysqli('localhost','root','','project_email_php');
+//$conn = new mysqli('localhost','root','','project_email_php');
+$conn = new mysqli('sql300.epizy.com','epiz_28936132','HQpuWwu4bw','epiz_28936132_GithubTimilinerDB');
 if($conn->connect_error)
 {
 	die('Connection Failed : '.$conn->connect_error);

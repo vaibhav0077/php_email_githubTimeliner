@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "project_email_php";
+$servername = "sql300.epizy.com";
+$username = "epiz_28936132";
+$password = "HQpuWwu4bw";
+$dbname = "epiz_28936132_GithubTimilinerDB";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

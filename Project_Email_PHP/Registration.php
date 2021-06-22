@@ -7,7 +7,8 @@ $email=$_POST['email'];
 $uname=$_POST['uname'];
 $p1=$_POST['p1'];
 $token=rand(100000,999999);
-$conn = new mysqli('localhost','root','','project_email_php');
+$conn = new mysqli('sql300.epizy.com','epiz_28936132','HQpuWwu4bw','epiz_28936132_GithubTimilinerDB');
+//$conn = new mysqli($servername, $username, $password,);
 if($conn->connect_error)
 {
 	die('Connection Failed : '.$conn->connect_error);

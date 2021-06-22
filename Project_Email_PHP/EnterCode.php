@@ -1,11 +1,13 @@
 <?php
 session_start();
-if(isset(($_GET['code'])))
-$token=($_GET['code']);
+if(isset($_POST['submit']))
+{
+$token=$_POST['code'];
 
 $email=$_SESSION['email'];
-//echo ($email) ;
-$conn = new mysqli('localhost','root','','project_email_php');
+echo ($email) ;
+//$conn = new mysqli('localhost','root','','project_email_php');
+$conn = new mysqli('sql300.epizy.com','epiz_28936132','HQpuWwu4bw','epiz_28936132_GithubTimilinerDB');
 if($conn->connect_error)
 {
 	die('Connection Failed : '.$conn->connect_error);
@@ -26,7 +28,7 @@ else
 {
 	echo '<script>alert("Wrong Varification Code")</script>';
 	echo '<script> window.location.href="EnterCode.php"</script>';
-		
+	}	
 }
 
 ?>
@@ -87,7 +89,7 @@ color: #ffffff;
 </head>
 <body>
 <center><br><br><br><br>
-<div id="login"><br>
+<div id="login">
 <h3><b>Enter Code Here</b></h3><br>
 <form method="post" action="EnterCode.php" name="a" onsubmit="return validateform()">
 <label>Varification Code</label>
